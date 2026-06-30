@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WIARM Media Production - Where Imagination And Reality Meet. Saudi creative media company specializing in AI commercial videos, cinematic production, and creative content." />
+  <meta property="og:title" content="WIARM Media Production" />
+  <meta property="og:description" content="Where Imagination And Reality Meet — AI-powered cinematic media production." />
+  <meta property="og:type" content="website" />
+  <title>WIARM Media Production — Where Imagination And Reality Meet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body class="lang-ar">
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <img src="1111.png" alt="WIARM" class="loader-img" />
+    </div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <p class="loader-text" data-ar="جاري التحميل..." data-en="Loading...">جاري التحميل...</p>
+  </div>
+</div>
+
+<!-- PARTICLES CANVAS -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- MOUSE GLOW -->
+<div id="mouse-glow"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="1111.png" alt="WIARM Media Production" />
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home"    data-ar="الرئيسية"    data-en="Home">الرئيسية</a></li>
+      <li><a href="#services" data-ar="خدماتنا"    data-en="Services">خدماتنا</a></li>
+      <li><a href="#portfolio" data-ar="أعمالنا"   data-en="Portfolio">أعمالنا</a></li>
+      <li><a href="#whyus"   data-ar="لماذا نحن"   data-en="Why Us">لماذا نحن</a></li>
+      <li><a href="#pricing" data-ar="الأسعار"     data-en="Pricing">الأسعار</a></li>
+      <li><a href="#faq"     data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</a></li>
+      <li><a href="#contact" data-ar="تواصل معنا"  data-en="Contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-btn" id="lang-toggle">EN</button>
+      <a href="#contact" class="btn-cta" data-ar="ابدأ مشروعك" data-en="Start Your Project">ابدأ مشروعك</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#home"     data-ar="الرئيسية"         data-en="Home"     onclick="closeMobile()">الرئيسية</a></li>
+    <li><a href="#services" data-ar="خدماتنا"           data-en="Services" onclick="closeMobile()">خدماتنا</a></li>
+    <li><a href="#portfolio" data-ar="أعمالنا"          data-en="Portfolio" onclick="closeMobile()">أعمالنا</a></li>
+    <li><a href="#whyus"    data-ar="لماذا نحن"         data-en="Why Us"   onclick="closeMobile()">لماذا نحن</a></li>
+    <li><a href="#pricing"  data-ar="الأسعار"           data-en="Pricing"  onclick="closeMobile()">الأسعار</a></li>
+    <li><a href="#faq"      data-ar="الأسئلة الشائعة"  data-en="FAQ"      onclick="closeMobile()">الأسئلة الشائعة</a></li>
+    <li><a href="#contact"  data-ar="تواصل معنا"        data-en="Contact"  onclick="closeMobile()">تواصل معنا</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span data-ar="الإنتاج الإعلامي بالذكاء الاصطناعي" data-en="AI-Powered Media Production">الإنتاج الإعلامي بالذكاء الاصطناعي</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-ar="نصنع مستقبل" data-en="We Create The Future">نصنع مستقبل</span>
+        <span class="title-line accent-line" data-ar="الإعلانات" data-en="Of Advertising">الإعلانات</span>
+        <span class="title-line" data-ar="بالذكاء الاصطناعي" data-en="Through AI &amp; Cinema">بالذكاء الاصطناعي</span>
+      </h1>
+      <p class="hero-sub" data-ar="نمزج بين قوة الذكاء الاصطناعي والإنتاج الإبداعي لتقديم محتوى بصري استثنائي يحقق نتائج حقيقية للعلامات التجارية." data-en="We combine AI innovation and professional production to create visual experiences that drive real business results.">
+        نمزج بين قوة الذكاء الاصطناعي والإنتاج الإبداعي لتقديم محتوى بصري استثنائي يحقق نتائج حقيقية للعلامات التجارية.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary" data-ar="احجز استشارة مجانية" data-en="Book Free Consultation">احجز استشارة مجانية</a>
+        <a href="#portfolio" class="btn-ghost" data-ar="شاهد أعمالنا" data-en="View Portfolio">
+          <span class="play-icon">▶</span>
+          <span data-ar="شاهد أعمالنا" data-en="View Portfolio">شاهد أعمالنا</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+          <p class="stat-label" data-ar="فيديو منتج" data-en="Videos Produced">فيديو منتج</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="120">0</span><span class="stat-plus">+</span>
+          <p class="stat-label" data-ar="عميل" data-en="Clients">عميل</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+          <p class="stat-label" data-ar="رضا العملاء" data-en="Client Satisfaction">رضا العملاء</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="24">0</span><span class="stat-plus">/7</span>
+          <p class="stat-label" data-ar="دعم متواصل" data-en="Support">دعم متواصل</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="visual-ring ring-outer"></div>
+      <div class="visual-ring ring-mid"></div>
+      <div class="visual-ring ring-inner"></div>
+      <div class="visual-core">
+        <img src="1111.png" alt="WIARM" class="hero-logo-img" />
+        <div class="core-glow"></div>
+      </div>
+      <div class="float-tag tag-1">
+  <span>🎬</span>
+  <span data-ar="إنتاج بالذكاء الاصطناعي" data-en="AI Production">
+    إنتاج بالذكاء الاصطناعي
+  </span>
+</div>
+
+<div class="float-tag tag-2">
+  <span>✨</span>
+  <span data-ar="سينمائي" data-en="Cinematic">
+    سينمائي
+  </span>
+</div>
+
+<div class="float-tag tag-3">
+  <span>🚀</span>
+  <span data-ar="ابتكار" data-en="Innovation">
+    ابتكار
+  </span>
+</div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span data-ar="اسحب للأسفل" data-en="Scroll Down">اسحب للأسفل</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="ما نقدمه" data-en="What We Offer">ما نقدمه</span>
+      <h2 data-ar="خدماتنا الاحترافية" data-en="Our Professional Services">خدماتنا الاحترافية</h2>
+      <p data-ar="نقدم مجموعة متكاملة من خدمات الإنتاج الإعلامي المدعومة بالذكاء الاصطناعي" data-en="A full suite of AI-powered media production services">
+        نقدم مجموعة متكاملة من خدمات الإنتاج الإعلامي المدعومة بالذكاء الاصطناعي
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="svc-icon">🤖</div>
+        <h3 data-ar="فيديوهات إعلانية بالذكاء الاصطناعي" data-en="AI Advertising Videos">فيديوهات إعلانية بالذكاء الاصطناعي</h3>
+        <p data-ar="إعلانات مدهشة مدعومة بأحدث تقنيات الذكاء الاصطناعي" data-en="Stunning ads powered by the latest AI technologies">إعلانات مدهشة مدعومة بأحدث تقنيات الذكاء الاصطناعي</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🎥</div>
+        <h3 data-ar="تصوير احترافي" data-en="Professional Filming">تصوير احترافي</h3>
+        <p data-ar="فريق تصوير محترف بأحدث المعدات السينمائية" data-en="Professional filming crew with the latest cinematic equipment">فريق تصوير محترف بأحدث المعدات السينمائية</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">✂️</div>
+        <h3 data-ar="مونتاج احترافي" data-en="Video Editing">مونتاج احترافي</h3>
+        <p data-ar="مونتاج إبداعي يحول لقطاتك إلى تحفة فنية" data-en="Creative editing that transforms footage into art">مونتاج إبداعي يحول لقطاتك إلى تحفة فنية</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">✨</div>
+        <h3 data-ar="موشن جرافيك" data-en="Motion Graphics">موشن جرافيك</h3>
+        <p data-ar="رسوم متحركة احترافية تضفي الحياة على أفكارك" data-en="Professional animation that brings your ideas to life">رسوم متحركة احترافية تضفي الحياة على أفكارك</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🏢</div>
+        <h3 data-ar="فيديوهات مؤسسية" data-en="Corporate Videos">فيديوهات مؤسسية</h3>
+        <p data-ar="محتوى احترافي يعكس هوية علامتك التجارية" data-en="Professional content that reflects your brand identity">محتوى احترافي يعكس هوية علامتك التجارية</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">📦</div>
+        <h3 data-ar="إعلانات المنتجات" data-en="Product Commercials">إعلانات المنتجات</h3>
+        <p data-ar="إعلانات تبرز منتجاتك وتحفز قرارات الشراء" data-en="Ads that showcase your products and drive purchases">إعلانات تبرز منتجاتك وتحفز قرارات الشراء</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">🎪</div>
+        <h3 data-ar="تغطية الفعاليات" data-en="Event Coverage">تغطية الفعاليات</h3>
+        <p data-ar="نوثق لحظاتك المميزة بأعلى مستوى من الاحترافية" data-en="We document your special moments with the highest professionalism">نوثق لحظاتك المميزة بأعلى مستوى من الاحترافية</p>
+        <div class="svc-line"></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="svc-icon">📱</div>
+        <h3 data-ar="محتوى سوشيال ميديا" data-en="Branding Content">محتوى سوشيال ميديا</h3>
+        <p data-ar="محتوى مصمم للانتشار على منصات التواصل الاجتماعي" data-en="Content designed to go viral on social platforms">محتوى مصمم للانتشار على منصات التواصل الاجتماعي</p>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section-process">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="كيف نعمل" data-en="How We Work">كيف نعمل</span>
+      <h2 data-ar="كيف نحول الفكرة إلى إعلان مؤثر" data-en="How We Turn Ideas Into Impactful Advertising">كيف نحول الفكرة إلى إعلان مؤثر</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon">💡</div>
+        <h3 data-ar="الفكرة" data-en="Idea">الفكرة</h3>
+        <p data-ar="نستكشف رؤيتك ونضع الأساس الإبداعي" data-en="We explore your vision and lay the creative foundation">نستكشف رؤيتك ونضع الأساس الإبداعي</p>
+      </div>
+      <div class="process-arrow reveal">→</div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon">🤖</div>
+        <h3 data-ar="الإنشاء بالذكاء الاصطناعي" data-en="AI Creation">الإنشاء بالذكاء الاصطناعي</h3>
+        <p data-ar="نطلق العنان للذكاء الاصطناعي لتوليد مواد إبداعية مذهلة" data-en="We unleash AI to generate stunning creative assets">نطلق العنان للذكاء الاصطناعي لتوليد مواد إبداعية مذهلة</p>
+      </div>
+      <div class="process-arrow reveal">→</div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon">🎬</div>
+        <h3 data-ar="المونتاج الاحترافي" data-en="Professional Editing">المونتاج الاحترافي</h3>
+        <p data-ar="فريقنا يصقل ويدمج كل عناصر الإنتاج" data-en="Our team polishes and integrates all production elements">فريقنا يصقل ويدمج كل عناصر الإنتاج</p>
+      </div>
+      <div class="process-arrow reveal">→</div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <div class="step-icon">🏆</div>
+        <h3 data-ar="الإعلان النهائي" data-en="Final Commercial">الإعلان النهائي</h3>
+        <p data-ar="تسليم إعلانك الاحترافي جاهزاً للنشر والانتشار" data-en="Your professional commercial delivered ready for release">تسليم إعلانك الاحترافي جاهزاً للنشر والانتشار</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="أعمالنا" data-en="Our Work">أعمالنا</span>
+      <h2 data-ar="معرض أعمالنا المتميزة" data-en="Our Distinguished Portfolio">معرض أعمالنا المتميزة</h2>
+    </div>
+    <div class="portfolio-filters reveal">
+      <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+      <button class="filter-btn" data-filter="ai" data-ar="إعلانات AI" data-en="AI Ads">إعلانات AI</button>
+      <button class="filter-btn" data-filter="commercial" data-ar="فيديوهات تجارية" data-en="Commercial">فيديوهات تجارية</button>
+      <button class="filter-btn" data-filter="corporate" data-ar="مؤسسي" data-en="Corporate">مؤسسي</button>
+      <button class="filter-btn" data-filter="motion" data-ar="موشن" data-en="Motion">موشن</button>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card reveal" data-cat="ai">
+        <div class="port-thumb port-1">
+          <div class="port-overlay">
+            <div class="port-meta">
+              <span class="port-cat" data-ar="إعلان AI" data-en="AI Ad">إعلان AI</span>
+              <h4 data-ar="حملة لوكساس السيارات" data-en="Lexus Auto Campaign">حملة لوكساس السيارات</h4>
+            </div>
+            <div class="port-play">▶</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-cat="commercial">
+        <div class="port-thumb port-2">
+          <div class="port-overlay">
+            <div class="port-meta">
+              <span class="port-cat" data-ar="تجاري" data-en="Commercial">تجاري</span>
+              <h4 data-ar="إعلان عطور فاخرة" data-en="Luxury Perfume Ad">إعلان عطور فاخرة</h4>
+            </div>
+            <div class="port-play">▶</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-cat="corporate">
+        <div class="port-thumb port-3">
+          <div class="port-overlay">
+            <div class="port-meta">
+              <span class="port-cat" data-ar="مؤسسي" data-en="Corporate">مؤسسي</span>
+              <h4 data-ar="هوية شركة التقنية" data-en="Tech Company Identity">هوية شركة التقنية</h4>
+            </div>
+            <div class="port-play">▶</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-cat="motion">
+        <div class="port-thumb port-4">
+          <div class="port-overlay">
+            <div class="port-meta">
+              <span class="port-cat" data-ar="موشن جرافيك" data-en="Motion Graphics">موشن جرافيك</span>
+              <h4 data-ar="تصميم هوية بصرية" data-en="Visual Identity Design">تصميم هوية بصرية</h4>
+            </div>
+            <div class="port-play">▶</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-cat="ai">
+        <div class="port-thumb port-5">
+          <div class="port-overlay">
+            <div class="port-meta">
+              <span class="port-cat" data-ar="حملة منتج" data-en="Product Campaign">حملة منتج</span>
+              <h4 data-ar="إطلاق هاتف ذكي جديد" data-en="New Smartphone Launch">إطلاق هاتف ذكي جديد</h4>
+            </div>
+            <div class="port-play">▶</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-cat="commercial">
+        <div class="port-thumb port-6">
+          <div class="port-overlay">
+            <div class="port-meta">
+              <span class="port-cat" data-ar="تغطية" data-en="Event Coverage">تغطية</span>
+              <h4 data-ar="قمة التقنية الرياض" data-en="Riyadh Tech Summit">قمة التقنية الرياض</h4>
+            </div>
+            <div class="port-play">▶</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="whyus" class="section-why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="مميزاتنا" data-en="Our Advantages">مميزاتنا</span>
+      <h2 data-ar="لماذا تختار WIARM؟" data-en="Why Choose WIARM?">لماذا تختار WIARM؟</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">⚡</div>
+        <h3 data-ar="تسليم أسرع" data-en="Faster Delivery">تسليم أسرع</h3>
+        <p data-ar="نستخدم الذكاء الاصطناعي لتسريع الإنتاج دون المساس بالجودة" data-en="AI-accelerated production without compromising quality">نستخدم الذكاء الاصطناعي لتسريع الإنتاج دون المساس بالجودة</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💰</div>
+        <h3 data-ar="تكلفة أقل" data-en="Lower Cost">تكلفة أقل</h3>
+        <p data-ar="إنتاج عالي الجودة بأسعار تنافسية تناسب ميزانيتك" data-en="High-quality production at competitive prices that suit your budget">إنتاج عالي الجودة بأسعار تنافسية تناسب ميزانيتك</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🧠</div>
+        <h3 data-ar="إبداع مدعوم بالذكاء الاصطناعي" data-en="AI-Powered Creativity">إبداع مدعوم بالذكاء الاصطناعي</h3>
+        <p data-ar="نمزج بين الإبداع البشري وقدرات الذكاء الاصطناعي" data-en="We blend human creativity with AI capabilities">نمزج بين الإبداع البشري وقدرات الذكاء الاصطناعي</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">👥</div>
+        <h3 data-ar="فريق إنتاج محترف" data-en="Professional Production Team">فريق إنتاج محترف</h3>
+        <p data-ar="خبراء متخصصون في الإنتاج السينمائي والإعلامي" data-en="Specialists in cinematic and media production">خبراء متخصصون في الإنتاج السينمائي والإعلامي</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">♾️</div>
+        <h3 data-ar="إمكانيات إبداعية لا محدودة" data-en="Unlimited Creative Possibilities">إمكانيات إبداعية لا محدودة</h3>
+        <p data-ar="لا حدود للإبداع مع دمج تقنيات الذكاء الاصطناعي" data-en="No limits to creativity when combining AI technologies">لا حدود للإبداع مع دمج تقنيات الذكاء الاصطناعي</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">📈</div>
+        <h3 data-ar="حملات قابلة للتوسع" data-en="Scalable Campaigns">حملات قابلة للتوسع</h3>
+        <p data-ar="نمو معك من الحملات الصغيرة إلى الكبيرة" data-en="Growing with you from small to large campaigns">نمو معك من الحملات الصغيرة إلى الكبيرة</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🎯</div>
+        <h3 data-ar="نتائج قابلة للقياس" data-en="Premium Quality Output">نتائج قابلة للقياس</h3>
+        <p data-ar="محتوى مصمم لتحقيق أهدافك التجارية الحقيقية" data-en="Content designed to achieve your real business goals">محتوى مصمم لتحقيق أهدافك التجارية الحقيقية</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🌐</div>
+        <h3 data-ar="خبرة سعودية عالمية" data-en="Saudi Global Expertise">خبرة سعودية عالمية</h3>
+        <p data-ar="نجمع الفهم المحلي مع المعايير العالمية" data-en="Combining local understanding with global standards">نجمع الفهم المحلي مع المعايير العالمية</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="الأسعار" data-en="Pricing">الأسعار</span>
+      <h2 data-ar="اختر الخطة المناسبة لك" data-en="Choose The Right Plan For You">اختر الخطة المناسبة لك</h2>
+            <h4 data-ar="الأسعار لا تشمل القيمة المضافة" data-en="Prices Do Not Include VAT">الأسعار لا تشمل القيمة المضافة</h4>
+
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="plan-label" data-ar="المبتدئ" data-en="Starter">المبتدئ</div>
+        <div class="plan-price"><span>3,000</span> <small>SAR</small></div>
+        <ul class="plan-features">
+          <li data-ar="✓ فيديو واحد إعلاني" data-en="✓ 1 Advertising Video">✓ فيديو واحد إعلاني</li>
+          <li data-ar="✓ من 30 ثانية إلى دقيقة" data-en="✓ From 30 Seconds to 1 Min">✓ من 30 ثانية إلى دقيقة</li>
+          <li data-ar="✓ مونتاج احترافي" data-en="✓ Professional Editing">✓ مونتاج احترافي</li>
+          <li data-ar="✓ تعليق صوتي" data-en="✓ Voice Over">✓ تعليق صوتي</li>
+          <li data-ar="✓ تسليم خلال 7 أيام" data-en="✓ Delivery in 7 days">✓ تسليم خلال 7 أيام</li>
+          <li class="disabled" data-ar="✗ مراجعتان" data-en="✗ 2 Revisions">✗ مراجعتان</li>
+          <li class="disabled" data-ar="✗ إعلانات AI متقدمة" data-en="✗ Advanced AI Ads">✗ إعلانات AI متقدمة</li>
+        </ul>
+        <a href="#contact" class="plan-btn" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</a>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="featured-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+        <div class="plan-label" data-ar="الأعمال" data-en="Business">الأعمال</div>
+        <div class="plan-price"><span>11,000</span> <small>SAR</small></div>
+        <ul class="plan-features">
+          <li data-ar="✓ 4 فيديوهات إعلانية" data-en="✓ 4 Advertising Videos">✓ 4 فيديوهات إعلانية</li>
+           <li data-ar="✓ من 30 ثانية إلى دقيقتين" data-en="✓ From 30 Seconds to 2 Min">✓ من 30 ثانية إلى دقيقتين</li>
+          <li data-ar="✓ إعلانات AI متقدمة" data-en="✓ Advanced AI Ads">✓ إعلانات AI متقدمة</li>
+          <li data-ar="✓ تعليق صوتي" data-en="✓ Voice Over">✓ تعليق صوتي</li>
+          <li data-ar="✓ موشن جرافيك" data-en="✓ Motion Graphics">✓ موشن جرافيك</li>
+          <li data-ar="✓ تسليم خلال 4 أيام" data-en="✓ Delivery in 4 days">✓ تسليم خلال 4 أيام</li>
+          <li data-ar="✓ مراجعتان" data-en="✓ 2 Revisions">✓ مراجعتان</li>
+        </ul>
+        <a href="#contact" class="plan-btn plan-btn-accent" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</a>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="plan-label" data-ar="الذهبي" data-en="Gold">الذهبي</div>
+        <div class="plan-price"><span>18,000</span> <small>SAR</small></div>
+        <ul class="plan-features">
+          <li data-ar="✓ 8 فيديوهات إعلانية" data-en="✓ 8 Advertising Videos">✓ 8 فيديوهات إعلانية</li>
+          <li data-ar="✓ من 30 ثانية إلى دقيقتين" data-en="✓ From 30 Seconds to 2 Min">✓ من 30 ثانية إلى دقيقتين</li>
+          <li data-ar="✓ مونتاج احترافي" data-en="✓ Professional Editing">✓ مونتاج احترافي</li>
+          <li data-ar="✓ تعليق صوتي" data-en="✓ Voice Over">✓ تعليق صوتي</li>
+          <li data-ar="✓ تسليم خلال 4 أيام" data-en="✓ Delivery in 4 days">✓ تسليم خلال 4 أيام</li>
+          <li data-ar="✓ مراجعتان" data-en="✓ 2 Revisions">✓ مراجعتان</li>
+          <li data-ar="✓ إعلانات AI متقدمة" data-en="✓ Advanced AI Ads">✓ إعلانات AI متقدمة</li>
+        </ul>
+        <a href="#contact" class="plan-btn" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</a>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="plan-label" data-ar="المؤسسات" data-en="Enterprise">المؤسسات</div>
+        <div class="plan-price"><span data-ar="مخصص" data-en="Custom">مخصص</span></div>
+        <ul class="plan-features">
+          <li data-ar="✓ عقود سنوية" data-en="✓ Annual Contracts">✓ عقود سنوية</li>
+          <li data-ar="✓ عقود نصف سنوية" data-en="✓ Semi-Annual Contracts">✓ عقود نصف سنوية</li>
+          <li data-ar="✓ فيديوهات غير محدودة" data-en="✓ Unlimited Videos">✓ فيديوهات غير محدودة</li>
+          <li data-ar="✓ فريق إنتاج مخصص" data-en="✓ Dedicated Production Team">✓ فريق إنتاج مخصص</li>
+          <li data-ar="✓ تسليم فوري" data-en="✓ Priority Delivery">✓ تسليم فوري</li>
+          <li data-ar="✓ استراتيجية محتوى كاملة" data-en="✓ Full Content Strategy">✓ استراتيجية محتوى كاملة</li>
+          <li data-ar="✓ دعم 24/7" data-en="✓ 24/7 Support">✓ دعم 24/7</li>
+        </ul>
+        <a href="#contact" class="plan-btn" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section-testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="آراء العملاء" data-en="Client Reviews">آراء العملاء</span>
+      <h2 data-ar="ماذا يقول عملاؤنا" data-en="What Our Clients Say">ماذا يقول عملاؤنا</h2>
+    </div>
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track" id="testimonials-track">
+        <div class="testimonial-slide">
+          <div class="quote-icon">"</div>
+          <p class="quote-text" data-ar="WIARM حولت رؤيتنا إلى إعلانات مذهلة بتقنية الذكاء الاصطناعي. النتائج فاقت توقعاتنا بكثير." data-en="WIARM transformed our vision into stunning AI-powered ads. The results far exceeded our expectations.">
+            WIARM حولت رؤيتنا إلى إعلانات مذهلة بتقنية الذكاء الاصطناعي. النتائج فاقت توقعاتنا بكثير.
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <strong data-ar="أحمد الشمري" data-en="Ahmed Al-Shammari">أحمد الشمري</strong>
+              <span data-ar="مدير تسويق، شركة التقنية السعودية" data-en="Marketing Director, Saudi Tech Corp">مدير تسويق، شركة التقنية السعودية</span>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="quote-icon">"</div>
+          <p class="quote-text" data-ar="الجودة الاحترافية والسرعة في التسليم جعلت WIARM شريكنا الإعلامي الأول. أنصح بهم بشدة." data-en="Professional quality and fast delivery make WIARM our top media partner. Highly recommended.">
+            الجودة الاحترافية والسرعة في التسليم جعلت WIARM شريكنا الإعلامي الأول. أنصح بهم بشدة.
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">س</div>
+            <div>
+              <strong data-ar="سارة العتيبي" data-en="Sara Al-Otaibi">سارة العتيبي</strong>
+              <span data-ar="مؤسسة علامة تجارية فاخرة" data-en="Luxury Brand Founder">مؤسسة علامة تجارية فاخرة</span>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="quote-icon">"</div>
+          <p class="quote-text" data-ar="استطاعوا دمج الإبداع البشري مع قوة الذكاء الاصطناعي لإنتاج محتوى يميزنا في السوق." data-en="They combined human creativity with AI power to produce content that sets us apart in the market.">
+            استطاعوا دمج الإبداع البشري مع قوة الذكاء الاصطناعي لإنتاج محتوى يميزنا في السوق.
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">م</div>
+            <div>
+              <strong data-ar="محمد القحطاني" data-en="Mohammed Al-Qahtani">محمد القحطاني</strong>
+              <span data-ar="رئيس تنفيذي، مجموعة رؤية" data-en="CEO, Vision Group">رئيس تنفيذي، مجموعة رؤية</span>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prev-slide">&#8249;</button>
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="slider-btn" id="next-slide">&#8250;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</span>
+      <h2 data-ar="أسئلة تهمك" data-en="Questions You Might Have">أسئلة تهمك</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span data-ar="ما هي مدة إنتاج الفيديو الإعلاني؟" data-en="How long does it take to produce an advertising video?">ما هي مدة إنتاج الفيديو الإعلاني؟</span>
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-ar="يتراوح وقت الإنتاج بين 3 إلى 10 أيام عمل حسب تعقيد المشروع وحجمه. نسعى دائماً لتسليم أسرع مما هو متوقع." data-en="Production time ranges from 3 to 10 business days depending on project complexity. We always aim to deliver faster than expected.">
+            يتراوح وقت الإنتاج بين 3 إلى 10 أيام عمل حسب تعقيد المشروع وحجمه. نسعى دائماً لتسليم أسرع مما هو متوقع.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span data-ar="هل تستخدمون الذكاء الاصطناعي في جميع مشاريعكم؟" data-en="Do you use AI in all your projects?">هل تستخدمون الذكاء الاصطناعي في جميع مشاريعكم؟</span>
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-ar="ندمج الذكاء الاصطناعي في معظم مشاريعنا وفق احتياجات كل مشروع، مع الحفاظ على اللمسة الإبداعية البشرية." data-en="We integrate AI in most projects according to each project's needs, while maintaining the human creative touch.">
+            ندمج الذكاء الاصطناعي في معظم مشاريعنا وفق احتياجات كل مشروع، مع الحفاظ على اللمسة الإبداعية البشرية.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span data-ar="كم عدد المراجعات المتاحة؟" data-en="How many revisions are included?">كم عدد المراجعات المتاحة؟</span>
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-ar="تتضمن الخطط الأساسية مراجعتين، بينما تشمل خطة الأعمال والمؤسسات مراجعات غير محدودة حتى تحقيق رضاك الكامل." data-en="Basic plans include 2 revisions, while Business and Enterprise plans include unlimited revisions until your full satisfaction.">
+            تتضمن الخطط الأساسية مراجعتين، بينما تشمل خطة الأعمال والمؤسسات مراجعات غير محدودة حتى تحقيق رضاك الكامل.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span data-ar="هل تعملون مع العملاء خارج المملكة العربية السعودية؟" data-en="Do you work with clients outside Saudi Arabia?">هل تعملون مع العملاء خارج المملكة العربية السعودية؟</span>
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-ar="نعم، نخدم عملاء من جميع أنحاء منطقة الشرق الأوسط والعالم. تقنية الذكاء الاصطناعي تتيح لنا العمل مع أي عميل في أي مكان." data-en="Yes, we serve clients from across the Middle East and worldwide. AI technology allows us to work with any client anywhere.">
+            نعم، نخدم عملاء من جميع أنحاء منطقة الشرق الأوسط والعالم. تقنية الذكاء الاصطناعي تتيح لنا العمل مع أي عميل في أي مكان.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span data-ar="ما هي أنواع المحتوى التي يمكنكم إنتاجها؟" data-en="What types of content can you produce?">ما هي أنواع المحتوى التي يمكنكم إنتاجها؟</span>
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p data-ar="نتخصص في إعلانات AI، التصوير السينمائي، موشن جرافيك، فيديوهات مؤسسية، إعلانات المنتجات، تغطية الفعاليات، ومحتوى سوشيال ميديا." data-en="We specialize in AI ads, cinematic filming, motion graphics, corporate videos, product commercials, event coverage, and social media content.">
+            نتخصص في إعلانات AI، التصوير السينمائي، موشن جرافيك، فيديوهات مؤسسية، إعلانات المنتجات، تغطية الفعاليات، ومحتوى سوشيال ميديا.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</span>
+      <h2 data-ar="ابدأ مشروعك اليوم" data-en="Start Your Project Today">ابدأ مشروعك اليوم</h2>
+      <p data-ar="تواصل معنا الآن واحصل على استشارة مجانية لمشروعك" data-en="Contact us now and get a free consultation for your project">
+        تواصل معنا الآن واحصل على استشارة مجانية لمشروعك
+      </p>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <div class="info-item">
+          <div class="info-icon">💬</div>
+          <div>
+            <h4 data-ar="واتساب" data-en="WhatsApp">واتساب</h4>
+            <a href="https://wa.me/966500000000" dir="ltr">+966 50 000 0000</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+            <a href="mailto:info@wiarm.com">info@wiarm.com</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4 data-ar="الموقع" data-en="Location">الموقع</h4>
+            <span data-ar="الرياض، المملكة العربية السعودية" data-en="Riyadh, Saudi Arabia">الرياض، المملكة العربية السعودية</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+            <input type="text" id="f-name" placeholder="" data-ar-placeholder="محمد الأحمد" data-en-placeholder="Mohammed Al-Ahmad" />
+          </div>
+          <div class="form-group">
+            <label data-ar="اسم الشركة" data-en="Company Name">اسم الشركة</label>
+            <input type="text" id="f-company" placeholder="" data-ar-placeholder="شركة..." data-en-placeholder="Company..." />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+            <input type="tel" id="f-phone" placeholder="" data-ar-placeholder="+966 5x xxx xxxx" data-en-placeholder="+966 5x xxx xxxx" />
+          </div>
+          <div class="form-group">
+            <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+            <input type="email" id="f-email" placeholder="" data-ar-placeholder="email@example.com" data-en-placeholder="email@example.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-ar="نوع المشروع" data-en="Project Type">نوع المشروع</label>
+          <select id="f-type">
+            <option value="" data-ar="اختر نوع المشروع..." data-en="Select project type...">اختر نوع المشروع...</option>
+            <option value="ai" data-ar="إعلان AI" data-en="AI Advertisement">إعلان AI</option>
+            <option value="filming" data-ar="تصوير احترافي" data-en="Professional Filming">تصوير احترافي</option>
+            <option value="editing" data-ar="مونتاج" data-en="Video Editing">مونتاج</option>
+            <option value="motion" data-ar="موشن جرافيك" data-en="Motion Graphics">موشن جرافيك</option>
+            <option value="corporate" data-ar="فيديو مؤسسي" data-en="Corporate Video">فيديو مؤسسي</option>
+            <option value="other" data-ar="أخرى" data-en="Other">أخرى</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="رسالتك" data-en="Your Message">رسالتك</label>
+          <textarea id="f-message" rows="4" placeholder="" data-ar-placeholder="أخبرنا عن مشروعك..." data-en-placeholder="Tell us about your project..."></textarea>
+        </div>
+        <div class="form-btns">
+          <button type="button" class="btn-submit" onclick="submitForm()" data-ar="إرسال الطلب" data-en="Send Request">إرسال الطلب</button>
+          <a href="https://wa.me/966500000000" class="btn-whatsapp" data-ar="احجز استشارة" data-en="Book Consultation">
+            💬 <span data-ar="احجز استشارة" data-en="Book Consultation">احجز استشارة</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p data-ar="شركة إعلامية إبداعية سعودية متخصصة في إنتاج الفيديوهات الإعلانية بالذكاء الاصطناعي والإنتاج السينمائي الاحترافي." data-en="A Saudi creative media company specializing in AI advertising videos and professional cinematic production.">
+          شركة إعلامية إبداعية سعودية متخصصة في إنتاج الفيديوهات الإعلانية بالذكاء الاصطناعي والإنتاج السينمائي الاحترافي.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+        <ul>
+          <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+          <li><a href="#portfolio" data-ar="أعمالنا" data-en="Portfolio">أعمالنا</a></li>
+          <li><a href="#pricing" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+          <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h4>
+        <ul>
+          <li data-ar="إعلانات AI" data-en="AI Ads">إعلانات AI</li>
+          <li data-ar="تصوير سينمائي" data-en="Cinematic Filming">تصوير سينمائي</li>
+          <li data-ar="موشن جرافيك" data-en="Motion Graphics">موشن جرافيك</li>
+          <li data-ar="فيديوهات مؤسسية" data-en="Corporate Videos">فيديوهات مؤسسية</li>
+          <li data-ar="محتوى سوشيال" data-en="Social Content">محتوى سوشيال</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>WIARM Media Production © 2026 — <span data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">جميع الحقوق محفوظة</span></p>
+      <p class="footer-slogan"
+   data-ar="حيث يلتقي الخيال بالواقع"
+   data-en="Where Imagination And Reality Meet">
+   حيث يلتقي الخيال بالواقع
+</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
